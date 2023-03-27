@@ -1,0 +1,35 @@
+<pre>
+    <h3>What is the Module in Angular?</h3>
+In Angular, a module is a container. In order words, we can say that a module is a mechanism to group
+components, services, directives, pipes. So, the grouping of related components, 
+services, pipes, and directives is nothing but a module in angular.
+</pre>
+
+<pre>
+<h3>When do we need to create multiple modules?</h3>
+Suppose, you are developing an ERP application for a company and that application includes many portals
+such as Customer, Employee, Account, and HR. Then you need to create separate modules for each portal like
+Employee Module, Account Module, HR Module, etc. The reason for creating a separate module is, AppModul
+(app.module.ts file) is the root module of your application and whenever you create any component, then you
+need to import that component as well as you need to include a reference for that component in the
+declarations array of the @NgModule decorator.
+
+Imagine if you are creating hundreds or thousands of components, then you need to import and include
+references for all the components within the root module (AppModule) which becomes very difficult to manage
+as it becomes complex.
+
+In order to overcome such complexity, what you will do is, for each portal you need to create one module
+and within that module, you need to add the related components of that module. And finally, you need to
+include a reference of that module in your root module i.e. AppModule. You may be confusing at this moment
+Let us do this practically.
+</pre>
+
+<h3>Step to create the module and uses the component</h3>
+<ul>
+    <li>create the module  = ng g module moduleName</li>
+    <li>create component inside the module = ng g c moduleName/componentName</li>
+    <li>import the component inside the created module</li>
+    <li>export that component which was created inside the module</li>
+    <li>import the created module inside the app.module.ts</li>
+    <li>then after pass the selector inside the app.component.ts</li>
+</ul>
