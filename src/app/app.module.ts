@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { ComponetComponent } from './componet/componet.component';
 import { LoginModule } from './login/login.module';
+import { EventComponent } from './event/event.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InterpolationComponent,
-    ComponetComponent
+    ComponetComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
