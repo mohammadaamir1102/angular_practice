@@ -1,0 +1,110 @@
+<h2>If and If-else Example together</h2>
+<h3 *ngIf="ifBlock else elseBlock">
+    if Block
+</h3>
+
+
+<ng-template #elseBlock>
+    <h3>else Block</h3>
+</ng-template>
+
+<hr>
+
+
+
+<h2>If and If-else Example together</h2>
+<h3 *ngIf="ifBlock then ifBlock else elseBlock"></h3>
+
+<ng-template #ifBlock>
+    <h3>if Block</h3>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h3>else Block</h3>
+</ng-template>
+
+<hr>
+
+<h2>String condition check</h2>
+<h3 *ngIf="stringConditionCheck=='Yes' else elseBlock">
+    if Block
+</h3>
+
+
+<ng-template #elseBlock>
+    <h3>else Block</h3>
+</ng-template>
+
+<hr>
+
+<ng-template [ngIf]="show=='red'">
+    <h3>Red Block</h3>
+</ng-template>
+
+<ng-template [ngIf]="show=='green'">
+    <h3>Green Block</h3>
+</ng-template>
+
+<ng-template [ngIf]="show=='orange'">
+    <h3>Orange Block</h3>
+</ng-template>
+
+<hr>
+<h1>Real Example</h1>
+<div>
+    <input type="radio" name="rb" (click)="ChangeData(true)" checked> Valid
+    <input type="radio" name="rb" (click)="ChangeData(false)"> Invalid
+</div>
+<div *ngIf="isValid">
+    <b>The Data is valid.</b>
+</div>
+
+<div *ngIf="!isValid">
+    <b>The Data is invalid.</b>
+</div>
+
+<hr>
+<h1>ngFor Example</h1>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Branch</th>
+            <th>DOB</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let student of students'>
+            <td>{{student.ID}}</td>
+            <td>{{student.FirstName}}</td>
+            <td>{{student.LastName}}</td>
+            <td>{{student.Branch}}</td>
+            <td>{{student.DOB}}</td>
+            <td>{{student.Gender}}</td>
+        </tr>
+        <tr *ngIf="!students || students.length==0">
+            <td colspan="7">
+                No Students to display
+            </td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<h1>Switch case example</h1>
+
+<div [ngSwitch]="switchColor">
+    <h1 *ngSwitchCase="'red'" style="background-color: red;">
+        Red block
+    </h1>
+    <h1 *ngSwitchCase="'green'" style="background-color: green;">
+        Green block
+    </h1>
+    <h1 *ngSwitchCase="'yellow'" style="background-color: yellow;">
+        Yellow block
+    </h1>
+
+</div>

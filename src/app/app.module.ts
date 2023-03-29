@@ -8,6 +8,7 @@ import { ComponetComponent } from './componet/componet.component';
 import { LoginModule } from './login/login.module';
 import { EventComponent } from './event/event.component';
 import { PropbindingComponent } from './propbinding/propbinding.component';
+import { ConditionComponent } from './condition/condition.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PropbindingComponent } from './propbinding/propbinding.component';
     InterpolationComponent,
     ComponetComponent,
     EventComponent,
-    PropbindingComponent
+    PropbindingComponent,
+    ConditionComponent
   ],
   imports: [
     BrowserModule,
