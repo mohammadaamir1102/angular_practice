@@ -1,0 +1,10 @@
+<h3>Binding a property with HTML</h3>
+<h3>prop binding vs interpolation</h3>
+<input type="text" [disabled]="isEnable" [value]="proBinding"><br><br>
+<input type="text" disabled="isEnable" value={{interpolBinding}}><br><br>
+
+<button (click)="enableTextBox()">Click</button>
+
+<h5>Property Binding can handle the disable property</h5>
+<h5>interpolation Binding can not handle the disable property</h5>
+<h1>if we click on click  button then able to see the diff between property binding and interpolation binding</h1>

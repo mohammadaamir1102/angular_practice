@@ -7,6 +7,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { ComponetComponent } from './componet/componet.component';
 import { LoginModule } from './login/login.module';
 import { EventComponent } from './event/event.component';
+import { PropbindingComponent } from './propbinding/propbinding.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { EventComponent } from './event/event.component';
     AppComponent,
     InterpolationComponent,
     ComponetComponent,
-    EventComponent
+    EventComponent,
+    PropbindingComponent
   ],
   imports: [
     BrowserModule,
