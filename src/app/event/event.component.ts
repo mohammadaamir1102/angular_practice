@@ -3,19 +3,27 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-event',
   templateUrl: './event.component.html',
-  styleUrls: ['./event.component.css']
+  styleUrls: ['./event.component.css'],
 })
 export class EventComponent {
+  inputValue: any;
+  keyupValue: any;
+  keyupEnter: any;
+  keydownValue: any;
 
-  inputValue:any;
-  keyupEventValue:any;
-
-  clickEvent(val: any){
-    return this.inputValue = val; 
+  clickEvent(val: any) {
+    return (this.inputValue = val);
   }
 
-  keyupEvent(){
-
+  keyupEvent(data: any) {
+    this.keyupValue = data;
   }
 
+  keyEnterEvent(val: any) {
+    this.keyupEnter = val.target.value;
+  }
+
+  keydownEvent(val: any) {
+    this.keydownValue = val;
+  }
 }
