@@ -1,0 +1,28 @@
+<div class="simpleForm">
+    <h1>Simple Form</h1>
+
+    <pre>
+        What are Angular Forms?
+        Developing forms requires design skill as well as framework support for two-way data binding,
+        change tracking, validation, error handling, etc. The Angular Framework, provides two different ways
+        to collect and validate the data from a user. They are as follows:
+
+        <b>1-Template-Driven Forms</b> 
+        <b>2-Model-Driven Forms (Reactive Forms)</b> 
+    </pre>
+    <h5><b>Note = </b> Need to import FormsModule into app.module.ts</h5>
+    <!-- here ngFrom compulsory  -->
+    <form #simpleForm="ngForm" (ngSubmit)="getRegFormValue(simpleForm.value)">
+        <input type="text" ngModel name="firstName" placeholder="Enter firstName"><br><br>
+        <input type="text" ngModel name="lastName" placeholder="Enter lastName"><br><br>
+        <input type="text" ngModel name="age" placeholder="Enter age"><br><br>
+        <input type="text" ngModel name="address" placeholder="Enter address"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h5>first Name = {{formValues.firstName }}</h5>
+    <h5>last Name = {{formValues.lastName }}</h5>
+    <h5>age = {{formValues.age }}</h5>
+    <h5>address = {{formValues.address }}</h5>
+
+</div>

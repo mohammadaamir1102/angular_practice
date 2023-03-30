@@ -9,6 +9,8 @@ import { LoginModule } from './login/login.module';
 import { EventComponent } from './event/event.component';
 import { PropbindingComponent } from './propbinding/propbinding.component';
 import { ConditionComponent } from './condition/condition.component';
+import { FormComponent } from './form/form.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,12 +20,14 @@ import { ConditionComponent } from './condition/condition.component';
     ComponetComponent,
     EventComponent,
     PropbindingComponent,
-    ConditionComponent
+    ConditionComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LoginModule
+    LoginModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
