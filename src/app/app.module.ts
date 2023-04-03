@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -34,7 +35,7 @@ import { ChildComponent } from './child/child.component';
     FooterComponent,
     StylebindingComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
   
   ],
   imports: [
@@ -43,7 +44,8 @@ import { ChildComponent } from './child/child.component';
     LoginModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

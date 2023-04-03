@@ -1,3 +1,8 @@
 <p>Data transfer value = {{data}}</p>
-<app-child [hero] = "data" >
-</app-child>
+
+<div>
+    <app-child [hero]="data" [usersData]="users">
+    </app-child>
+</div>
+
+<p>component re-useability </p>
