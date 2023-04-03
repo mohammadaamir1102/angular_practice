@@ -1,0 +1,7 @@
+<h1 style="color: blue;">By css Color</h1> normal style
+<h1 [style.color]="'green'">by binding css normal color </h1> normal style
+<h1 [style.color]='colorName'>by dynamic color</h1>
+<h1 [style.color]="colorNameByMethod">by binding</h1>
+<button (click)="buttonClick()">change color by button</button>
+
+<h1 [style.color]="err?'red':'green'">condition Color</h1>
