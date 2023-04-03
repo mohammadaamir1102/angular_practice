@@ -14,6 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 @NgModule({
@@ -28,12 +31,15 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
     HeaderComponent,
     FooterComponent,
     StylebindingComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     LoginModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
