@@ -11,6 +11,8 @@ import { PropbindingComponent } from './propbinding/propbinding.component';
 import { ConditionComponent } from './condition/condition.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { FormsModule } from '@angular/forms';
     EventComponent,
     PropbindingComponent,
     ConditionComponent,
-    FormComponent
+    FormComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
