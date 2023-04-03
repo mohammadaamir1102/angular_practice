@@ -16,6 +16,8 @@ import { FooterComponent } from './footer/footer.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 
 
@@ -30,7 +32,9 @@ import {MatButtonModule} from '@angular/material/button';
     FormComponent,
     HeaderComponent,
     FooterComponent,
-    StylebindingComponent
+    StylebindingComponent,
+    ParentComponent,
+    ChildComponent
   
   ],
   imports: [
