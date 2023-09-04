@@ -15,7 +15,7 @@ export class EventComponent {
     return (this.inputValue = val);
   }
 
-  keyupEvent(data: any) {
+  keyupEvent(data: any) {                                                                         
     this.keyupValue = data;
   }
 
