@@ -89,6 +89,19 @@ export class InterpolationComponent {
 
     return dateCountMap;
   }
+  userJson = {
+    username: 'aamir',
+    email: 'aamir@gmail.com',
+    // Other user properties
+  };
+
+  checkUsername(value: any): void {
+    if (this.userJson.username === value) {
+      alert('input is equals to user name');
+    } else {
+      alert('input is not equals to user name');
+    }
+  }
 
 
 }
