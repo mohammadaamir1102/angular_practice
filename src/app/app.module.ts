@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
@@ -19,6 +19,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import {MatTableModule} from '@angular/material/table';
+import { RegistrationModule } from './registration/registration.module';
+import { HostListenerComponent } from './host-listener/host-listener.component';
 
 
 
@@ -36,6 +38,7 @@ import {MatTableModule} from '@angular/material/table';
     StylebindingComponent,
     ParentComponent,
     ChildComponent,
+    HostListenerComponent
   
   ],
   imports: [
@@ -45,7 +48,9 @@ import {MatTableModule} from '@angular/material/table';
     FormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatTableModule
+    MatTableModule,
+    ReactiveFormsModule,
+    RegistrationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
